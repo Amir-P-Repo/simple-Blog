@@ -3,8 +3,8 @@ This is a Django-based blog application that allows users to create, edit, and d
 
 python manage.py makemigrations ///
 
-python manage.py migrate
-///
-python manage.py createsuperuser
-///
+python manage.py migrate ///
+
+python manage.py createsuperuser ///
+
 python manage.py runserver
