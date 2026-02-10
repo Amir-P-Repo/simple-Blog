@@ -1,0 +1,141 @@
+/* static/css/style.css */
+
+/* --- General Body Styles --- */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #1f1f1f;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #bbbbbb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* --- Main Content --- */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #f5f5f5;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #1f1f1f;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+/* Forms */
+input, textarea, select, button {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #1e90ff;
+    border: none;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #bbbbbb;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Dark/Light Mode Preference */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #121212;
+    }
+
+    header, footer, ul li, input, textarea, select {
+        background-color: #f9f9f9;
+        color: #121212;
+    }
+
+    nav a {
+        color: #121212;
+    }
+
+    nav a:hover {
+        color: #1e90ff;
+    }
+
+    button {
+        background-color: #1e90ff;
+        color: #ffffff;
+    }
+}
+.form-select {
+    width: 100%;
+    max-width: 400000px; /* یا هر مقدار مناسب دیگه */
+    height: 35px;
+    padding: 5px;
+}

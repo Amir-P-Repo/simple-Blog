@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}My Dashboard{% endblock %}
+
+{% block content %}
+<h2>Your Dashboard</h2>
+<a href="{% url 'post_create' %}">Create New Post</a>
+
+{% if posts %}
+    <ul>
+        {% for post in posts %}
+            <li>
+                <strong>{{ post.title }}</strong> - {{ post.status }}
+                <a href="{% url 'user_post_edit' post.slug %}">Edit</a> |
+                <a href="{% url 'user_post_delete' post.slug %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You haven't created any posts yet.</p>
+{% endif %}
+{% endblock %}
